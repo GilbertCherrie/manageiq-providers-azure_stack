@@ -18,6 +18,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency 'ms_rest',            '~> 0.7.6.1'
+  spec.add_runtime_dependency 'ms_rest_azure',      '~> 0.12.0.1'
   spec.add_runtime_dependency 'azure_mgmt_compute', '~> 0.22.0.1'
   spec.add_runtime_dependency 'azure_mgmt_monitor', '~> 0.19.0.1'
   spec.add_runtime_dependency 'azure_mgmt_network', '~> 0.26.1.1'
